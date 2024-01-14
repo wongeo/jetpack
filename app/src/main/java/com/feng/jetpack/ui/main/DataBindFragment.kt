@@ -27,7 +27,7 @@ class DataBindFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentDataBindBinding.inflate(this.layoutInflater)
         binding.viewmodel = viewModel
         binding.lifecycleOwner = this//观察数据变化
